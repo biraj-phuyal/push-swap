@@ -6,10 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:26:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 15:44:36 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/24 21:18:50 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../include/push_swap.h"
 #include <stdio.h>
 
 int getMax(int *arr, int n) {

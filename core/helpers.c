@@ -5,12 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 19:02:11 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 19:16:39 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/10/24 21:28:05 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/10/24 21:28:09 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void pb()
+#include "../include/push_swap.h"
+
+int	get_len(long n)
 {
-	
+	int	len;
+
+	len = (n <= 0);
+	while (n)
+	{
+		n /= 10;
+		len++;
+	}
+	return (len);
 }

@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   small_numbers.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 14:05:54 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 22:26:49 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/10/24 21:26:07 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/10/24 21:27:26 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int main(int argc, char **argv)
+void	sort_two_numbers(t_stack *stack_a)
 {
-	t_stack stack_a;
-	t_stack stack_b;
-	
-	init_args(&stack_a, &stack_b, argc, argv);
-	while (1)
-	{
-		
-	}
-	return (0);
+
+}
+
+void	sort_three_numbers(t_stack *stack_a)
+{
+	int	first;
+	int	second;
+	int	third;
 }

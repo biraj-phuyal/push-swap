@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 14:05:54 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 22:26:49 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/10/24 19:02:11 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/10/24 21:18:29 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int main(int argc, char **argv)
+void pb()
 {
-	t_stack stack_a;
-	t_stack stack_b;
 	
-	init_args(&stack_a, &stack_b, argc, argv);
-	while (1)
-	{
-		
-	}
-	return (0);
 }
