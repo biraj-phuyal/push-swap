@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:24:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 21:06:35 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/24 21:23:10 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ typedef struct s_stack {
     int     is_circular;
 } t_stack;
 
+int	get_len(long n);
 
 #endif

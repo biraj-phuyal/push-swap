@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:05:54 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 22:26:49 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/24 22:32:49 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,7 @@ int main(int argc, char **argv)
 {
 	t_stack stack_a;
 	t_stack stack_b;
+
 	
-	init_args(&stack_a, &stack_b, argc, argv);
-	while (1)
-	{
-		
-	}
 	return (0);
 }
