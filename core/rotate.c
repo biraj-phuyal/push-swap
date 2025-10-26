@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:31:27 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 15:58:24 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:36:07 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void rotate(t_stack *stack)
 {
-	if(!stack->head || !stack->head->next)
-	stack->tail->val = stack->head->val;
-	stack->head->val = stack->head->next->val;
-	stack->tail->next = stack->head;
-	stack->head->prev = stack->tail;
+	if (!stack || stack->size < 2)
+        return;
+    stack->head = stack->head->next;
+    stack->tail = stack->tail->next;
 }
 
 void ra(t_stack *stack_a)

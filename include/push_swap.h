@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:24:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 17:34:30 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:05:21 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ typedef struct s_stack {
 
 void swap(t_stack *stack);
 void rotate(t_stack *stack);
-int return_numbers(char *argv);
+int error(int code);
 void reverse_rotate(t_stack *stack);
 
 

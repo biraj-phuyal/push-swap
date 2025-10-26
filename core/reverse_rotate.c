@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:39:42 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 16:03:46 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:36:30 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void reverse_rotate(t_stack *stack)
 {
-	if(!stack->head || !stack->head->next)
-	stack->head->val = stack->tail->val;
-	stack->tail->val = stack->head->val;
-	stack->tail->next = stack->head;
-	stack->head->prev = stack->tail;
+	 if (!stack || stack->size < 2)
+        return;
+    stack->head = stack->head->prev;
+    stack->tail = stack->tail->prev;
 }
 
 void rra(t_stack *stack_a)

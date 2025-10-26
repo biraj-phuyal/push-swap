@@ -6,46 +6,46 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:19:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 19:57:04 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:00:11 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int check_if_numbers_are_ordered(t_stack *a)
+int ordered(t_stack *stack)
 {
-    t_node *cur;
-    int     i;
+    t_node *current;
+    int i;
 
-    if (!a || a->size <= 1)
+    if (!stack || stack->size <= 1)
         return (1);
-    cur = a->head;
+    current = stack->head;
     i = 0;
-    while (i < a->size - 1)
+    while (i < stack->size - 1)
     {
-        if (cur->val > cur->next->val)
+        if (current->val > current->next->val)
             return (0);
-        cur = cur->next;
+        current = current->next;
         i++;
     }
     return (1);
 }
 
-int duplicated(int nums, t_stack *a)
+int has_duplicate(t_stack *stack, int number)
 {
-    t_node *cur;
-    int     i;
+    t_node *current;
+    int i;
 
-    if (!a || a->size == 0)
-        return (1);
-    cur = a->head;
+    if (!stack || stack->size == 0)
+        return 0;
+    current = stack->head;
     i = 0;
-    while (i < a->size)
+    while (i < stack->size)
     {
-        if (cur->val == nums)
-            return (0);
-        cur = cur->next;
+        if (current->val == number)
+            return (1);
+        current = current->next;
         i++;
     }
-    return (1);
+    return (0);
 }

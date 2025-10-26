@@ -6,15 +6,16 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 19:31:50 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 19:36:48 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:04:53 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int error(t_stack *stack_a)
+int error(int code)
 {
-	
+    (void)code;
+    write(2, "Error\n", 6);
+    exit(1);
 }
-
 
