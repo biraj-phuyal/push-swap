@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:39:42 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 16:02:07 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/26 16:03:46 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void rrb(t_stack *stack_b)
 	write(1, "rrb\n", 4);
 }
 
-void rra(t_stack *stack_a, t_stack *stack_b)
+void rrr(t_stack *stack_a, t_stack *stack_b)
 {
 	reverse_rotate(stack_a);
 	reverse_rotate(stack_b);
