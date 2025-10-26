@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   helpers.c                                          :+:      :+:    :+:   */
+/*   ordered.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 21:28:05 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/24 21:28:09 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/10/26 15:05:38 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/10/26 15:33:19 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int	get_len(long n)
+int check_if_numbers_are_ordered(t_stack *stack_a)
 {
-	int	len;
 
-	len = (n <= 0);
-	while (n)
-	{
-		n /= 10;
-		len++;
-	}
-	return (len);
 }
