@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error.c                                            :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 19:31:50 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 23:11:59 by biphuyal         ###   ########.fr       */
+/*   Created: 2025/03/03 18:37:14 by biphuyal          #+#    #+#             */
+/*   Updated: 2025/10/27 22:07:03 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "libft.h"
 
-int error(int code)
+int	ft_isspace(int c)
 {
-    (void)code;
-    write(2, "Error\n", 6);
-    exit(1);
+	return (c == ' ' || c == '\n' || c == '\t');
 }
-
+/* 
+int	main(void)
+{
+    char c = 9;
+    printf("%d", ft_isdigit(c));
+} 
+*/

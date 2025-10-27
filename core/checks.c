@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:19:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 15:02:44 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 22:11:58 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,21 +31,30 @@ int ordered(t_stack *stack)
     return (1);
 }
 
-int has_duplicate(t_stack *stack, int number)
+bool has_duplicate(t_stack *stack)
 {
-    t_node *current;
-    int i;
+	t_node *current;
+	t_node *checker;
+	int i;
+	int j;
 
-    if (!stack || stack->size == 0)
-        return 0;
-    current = stack->head;
-    i = 0;
-    while (i < stack->size)
-    {
-        if (current->val == number)
-            return (0);
-        current = current->next;
-        i++;
-    }
-    return (1);
+	if (!stack)
+		return (false);
+	current = stack->head;
+	i = 0;
+	while (i < stack->size)
+	{
+		checker = current->next;
+		j = i + 1;
+		while (j < stack->size)
+		{
+			if (current->val == checker->val)
+				return (true);
+			checker = checker->next;
+			j++;
+		}
+		current = current->next;
+		i++;
+	}
+	return (false);
 }

@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:00:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 15:03:51 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 23:12:17 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,9 @@ static t_node *new_node(int val)
 {
     t_node *node;
 
-    node = (t_node *)malloc(sizeof(*node));
-    if (!node)
-        reverse_rotate(2);
-    node->val    = val;
-    node->idx    = 0;
-    node->pos    = 0;
-    node->target = 0;
-    node->cost_a = 0;
-    node->cost_b = 0;
-    node->next   = NULL;
-    node->prev   = NULL;
+    node = ft_calloc(sizeof(t_node), 1);
+    if (node)
+	    node->val = val;
     return (node);
 }
 
@@ -49,17 +41,18 @@ static void push_back_nonempty(t_stack *stack, t_node *node)
     stack->size++;
 }
 
-void    push_back(t_stack *stack, int val)
+bool    push_back(t_stack *stack, int val)
 {
-    t_node *node;
+	t_node *node;
 
-    if (!stack)
-        error(3);
-    node = new_node(val);
-    if (stack->size == 0)
-    {
-        push_back_first(stack, node);
-        return ;
-    }
-    push_back_nonempty(stack, node);
+	if (!stack)
+		return (false);
+	node = new_node(val);
+    if (!node)
+        return (false);
+	if (stack->size == 0)
+		push_back_first(stack, node);
+    else
+        push_back_nonempty(stack, node);
+    return (true);
 }

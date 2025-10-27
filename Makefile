@@ -6,22 +6,25 @@
 #    By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 18:56:48 by biphuyal          #+#    #+#              #
-#    Updated: 2025/10/24 18:58:27 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/10/27 22:36:25 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = so_long
+NAME = push_swap
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -g
 INCLUDES = include/push_swap.h
+SRCS = ${wildcard core/*.c} ${wildcard libft/*.c}
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-.c.o:
-	$(CC) $(CFLAGS) -c -o $@ $< $(INCLUDES)
+${NAME}: ${OBJS}
+	${CC} ${CFLAGS} ${OBJS} -o ${NAME}
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+%.o: %.c
+	${CC} ${CFLAGS} -c $< -o $@
+	
 clean:
 	rm -f $(OBJS)
 
