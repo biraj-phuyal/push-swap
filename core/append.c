@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:00:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 22:52:16 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:03:51 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static t_node *new_node(int val)
 
     node = (t_node *)malloc(sizeof(*node));
     if (!node)
-        rror(2);
+        reverse_rotate(2);
     node->val    = val;
     node->idx    = 0;
     node->pos    = 0;

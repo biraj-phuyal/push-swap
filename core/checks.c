@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:19:13 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 23:00:11 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:02:44 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ int has_duplicate(t_stack *stack, int number)
     while (i < stack->size)
     {
         if (current->val == number)
-            return (1);
+            return (0);
         current = current->next;
         i++;
     }
-    return (0);
+    return (1);
 }

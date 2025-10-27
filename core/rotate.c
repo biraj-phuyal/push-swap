@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:31:27 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 22:36:07 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:08:46 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void rotate(t_stack *stack)
 {
 	if (!stack || stack->size < 2)
-        return;
+        return ;
     stack->head = stack->head->next;
     stack->tail = stack->tail->next;
 }
