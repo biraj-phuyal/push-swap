@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:24:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/26 23:05:21 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:30:06 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #define PUSH_SWAP_H
 
 #include "../libft/libft.h"
+#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 typedef struct s_node {
     int              val;
