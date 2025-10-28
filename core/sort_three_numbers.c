@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 21:38:22 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 21:38:23 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 17:04:13 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,20 @@ void	sort_three_numbers(t_stack *stack_a)
 	first = stack_a->head->val;
 	second = stack_a->head->next->val;
 	third = stack_a->tail->val;
-	if (first > second && second < third)
+	if (first > second && second < third && first < third)
 		sa(stack_a);
-	else if (first > second && first > third)
-		ra(stack_a);
-	else if (second > first && first < third)
-	{
-		sa(stack_a);
-		ra(stack_a);
-	}
-	else if (first > second && second > third)
+	else if (first > second && first > third && second > third)
 	{
 		sa(stack_a);
 		rra(stack_a);
 	}
-	else
+	else if (first > second && first > third && second < third)
+		ra(stack_a);
+	else if (first < second && second > third && first > third)
 		rra(stack_a);
+	else if (first < second && second > third && first < third)
+	{
+		sa(stack_a);
+		ra(stack_a);
+	}
 }

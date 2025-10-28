@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:02:11 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 23:14:51 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 16:27:29 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void pa(t_stack *stack_a, t_stack *stack_b)
 	write(1, "pa\n", 3);
 }
 
-void pb(t_stack *stack_a, t_stack *stack_b)
+void pb(t_stack *stack_b, t_stack *stack_a)
 {
 	t_node *head;
 
@@ -80,5 +80,5 @@ void pb(t_stack *stack_a, t_stack *stack_b)
 	head = take_the_head(stack_a);
 	if (head)
 		push(stack_b, head);
-	write(1, "pa\n", 3);
+	write(1, "pb\n", 3);
 }
