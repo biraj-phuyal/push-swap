@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:02:11 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 16:27:29 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 19:46:39 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ void push(t_stack *stack, t_node *head)
 		stack->head = head;
 	}
 	stack->size++;
-	process_indexing(stack);
 }
 
 void pa(t_stack *stack_a, t_stack *stack_b)

@@ -6,12 +6,11 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:05:54 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 18:12:02 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 20:07:36 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
 
 void	process_indexing(t_stack *stack)
 {
@@ -66,5 +65,7 @@ int main(int argc, char **argv)
 			sort_four_numbers(stack_a, stack_b);
 		else if (stack_a->size == 5)
 			sort_five_numbers(stack_a, stack_b);
+		else
+			radix_sort(stack_a, stack_b);
 	}
 }

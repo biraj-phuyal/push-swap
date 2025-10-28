@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:39:42 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 23:13:34 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 19:46:40 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void reverse_rotate(t_stack *stack)
         return ;
     stack->head = stack->head->prev;
     stack->tail = stack->tail->prev;
-	process_indexing(stack);
 }
 
 void rra(t_stack *stack_a)

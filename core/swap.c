@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 21:19:01 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 18:01:59 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 19:46:40 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ void swap(t_stack *stack)
     tmp = stack->head->val;
     stack->head->val = stack->head->next->val;
     stack->head->next->val = tmp;
-	process_indexing(stack);
+    tmp = stack->head->idx;
+    stack->head->idx = stack->head->next->idx;
+    stack->head->next->idx = tmp;
 }
 
 void sa(t_stack *stack_a)

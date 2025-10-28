@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:05:45 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 23:12:41 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 19:46:39 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,10 @@ long strict_atoi(char *argv)
 	sign = 1;
     while (ft_isspace(argv[i]))
         i++;
+    if (argv[i] && argv[i] == '-')
+        sign = -1;
     if (argv[i] && (argv[i] == '+' || argv[i] == '-'))
-    {
-        sign *= -1;
         i++;
-    }
     if (!ft_isdigit(argv[i]))
         return (LONG_MIN);
     while (ft_isdigit(argv[i]))

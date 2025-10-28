@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:24:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 17:54:31 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 19:47:35 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,13 @@ bool	has_duplicate(t_stack *stack);
 void	reverse_rotate(t_stack *stack);
 int		minimum_number(t_stack *stack_a);
 void	process_indexing(t_stack *stack);
+void	radix_sort(t_stack *a, t_stack *b);
 bool    push_back(t_stack *stack, int val);
 void	sort_three_numbers(t_stack *stack_a);
 void	rotate_to_top(t_stack *stack_a, int pos);
 bool	start(t_stack *stack, int argc, char **argv);
 void    sort_four_numbers(t_stack *stack_a, t_stack *stack_b);
-void sort_five_numbers(t_stack *stack_a, t_stack *stack_b);
+void	sort_five_numbers(t_stack *stack_a, t_stack *stack_b);
 
 
 void sa(t_stack *stack_a);
