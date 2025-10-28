@@ -6,22 +6,22 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 21:19:01 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/27 23:10:54 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/28 18:01:59 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-void swap(t_stack *stack_a)
+void swap(t_stack *stack)
 {
     int tmp;
 
-    if (!stack_a || stack_a->size < 2)
+    if (!stack || stack->size < 2)
         return ;
-    tmp = stack_a->head->val;
-    stack_a->head->val = stack_a->head->next->val;
-    stack_a->head->next->val = tmp;
-	process_indexing(stack_a);
+    tmp = stack->head->val;
+    stack->head->val = stack->head->next->val;
+    stack->head->next->val = tmp;
+	process_indexing(stack);
 }
 
 void sa(t_stack *stack_a)
