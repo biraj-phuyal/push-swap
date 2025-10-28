@@ -6,7 +6,7 @@
 #    By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 18:56:48 by biphuyal          #+#    #+#              #
-#    Updated: 2025/10/27 22:36:25 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/10/28 17:17:31 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,10 @@ ${NAME}: ${OBJS}
 	${CC} ${CFLAGS} -c $< -o $@
 	
 clean:
-	rm -f $(OBJS)
+	rm -rf $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all
 
