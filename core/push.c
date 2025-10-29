@@ -6,15 +6,15 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:02:11 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 19:46:39 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:37:37 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-t_node *take_the_head(t_stack *stack)
+t_node	*take_the_head(t_stack *stack)
 {
-	t_node *head;
+	t_node	*head;
 
 	if (!stack || stack->size == 0)
 		return (NULL);
@@ -36,7 +36,7 @@ t_node *take_the_head(t_stack *stack)
 	return (head);
 }
 
-void push(t_stack *stack, t_node *head)
+void	push(t_stack *stack, t_node *head)
 {
 	if (!stack || !head)
 		return ;
@@ -58,9 +58,9 @@ void push(t_stack *stack, t_node *head)
 	stack->size++;
 }
 
-void pa(t_stack *stack_a, t_stack *stack_b)
+void	pa(t_stack *stack_a, t_stack *stack_b)
 {
-	t_node *head;
+	t_node	*head;
 
 	if (!stack_b)
 		return ;
@@ -70,9 +70,9 @@ void pa(t_stack *stack_a, t_stack *stack_b)
 	write(1, "pa\n", 3);
 }
 
-void pb(t_stack *stack_b, t_stack *stack_a)
+void	pb(t_stack *stack_b, t_stack *stack_a)
 {
-	t_node *head;
+	t_node	*head;
 
 	if (!stack_a)
 		return ;

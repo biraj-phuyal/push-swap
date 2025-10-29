@@ -6,18 +6,18 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 21:38:38 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/28 16:15:20 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/10/29 19:40:52 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int minimum_number(t_stack *stack_a)
+int	minimum_number(t_stack *stack_a)
 {
-	int pos;
-	int best_pos;
-	int best_val;
-	t_node *current;
+	int		pos;
+	int		best_pos;
+	int		best_val;
+	t_node	*current;
 
 	best_val = stack_a->head->val;
 	pos = 0;
@@ -36,7 +36,7 @@ int minimum_number(t_stack *stack_a)
 	return (best_pos);
 }
 
-void rotate_to_top(t_stack *stack_a, int pos)
+void	rotate_to_top(t_stack *stack_a, int pos)
 {
 	int	i;
 
@@ -53,7 +53,7 @@ void rotate_to_top(t_stack *stack_a, int pos)
 	}
 }
 
-void sort_four_numbers(t_stack *stack_a, t_stack *stack_b)
+void	sort_four_numbers(t_stack *stack_a, t_stack *stack_b)
 {
 	int	pos;
 
