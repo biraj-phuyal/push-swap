@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 14:24:12 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/10/29 19:55:33 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/11/01 22:52:48 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int		error(int code);
 void	swap(t_stack *stack);
 void	rotate(t_stack *stack);
 int		ordered(t_stack *stack);
+void	free_stack(t_stack *stack);
 bool	has_duplicate(t_stack *stack);
 void	reverse_rotate(t_stack *stack);
 int		minimum_number(t_stack *stack);
