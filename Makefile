@@ -6,12 +6,12 @@
 #    By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 18:56:48 by biphuyal          #+#    #+#              #
-#    Updated: 2025/10/31 14:42:01 by biphuyal         ###   ########.fr        #
+#    Updated: 2025/11/21 17:56:24 by biphuyal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror -g
 SRCS =	core/append.c core/checks.c core/push.c core/push_swap.c core/radix_sort.c core/reverse_rotate.c core/rotate.c \
 		core/sort_five_numbers.c core/sort_four_numbers.c core/sort_three_numbers.c core/start.c core/swap.c \
