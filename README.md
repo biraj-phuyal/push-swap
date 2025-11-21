@@ -69,7 +69,7 @@ Check the result with your checker (if provided) or community tools:
 - Randomized sets:
   ```bash
   ARG=$(seq -100 100 | shuf -n 100); ./push_swap $ARG | ./checker_linux $ARG #linux
-  ARG=$(jot -r 100 -1000 1000); ./push_swap $ARG | ./checker_linux $ARG     # macOS
+  ARG=$(jot -r 100 -1000 1000); ./push_swap $ARG | ./checker_Mac $ARG     # macOS
   ```
 - Edge cases: already sorted, reverse sorted, near‑sorted, duplicates (must error), min/max `int`, single element
 - Measure:
